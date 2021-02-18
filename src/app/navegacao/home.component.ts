@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: `./footer.component.html `,
+  selector: 'app-home',
+  templateUrl: './home.component.html',
   styles: [
   ]
 })
-export class FooterComponent  {
+export class HomeComponent  {
 
   constructor() { }
 

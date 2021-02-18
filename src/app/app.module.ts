@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
-import {HomeComponent} from './navegacao/home.component';
-import {MenuComponent} from './navegacao/menu.component';
+import { HomeComponent} from './navegacao/home.component';
+import { MenuComponent} from './navegacao/menu.component';
+import { ContatoComponent} from './institucional/contato.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import {MenuComponent} from './navegacao/menu.component';
     HomeComponent,
     FooterComponent,
     MenuComponent,
+    
   ],
   imports: [
     BrowserModule
