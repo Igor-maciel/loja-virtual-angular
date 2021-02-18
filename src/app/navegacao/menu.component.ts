@@ -6,9 +6,4 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class FooterComponent  {
-
-  constructor() { }
-
-
-}
+export class FooterComponent  { }
