@@ -7,6 +7,10 @@ import { HomeComponent} from './navegacao/home.component';
 import { MenuComponent} from './navegacao/menu.component';
 import { ContatoComponent} from './institucional/contato/contato.component';
 import {SobreComponent} from  './institucional/sobre/sobre.component'
+import { RouterModule } from '@angular/router';
+import { rooteRouterConfigu } from './app.route';
+import { APP_BASE_HREF } from '@angular/common';
+import{from }from "rxjs";
 
 @NgModule({
   declarations: [
@@ -18,9 +22,12 @@ import {SobreComponent} from  './institucional/sobre/sobre.component'
     SobreComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    [RouterModule.forRoot(rooteRouterConfigu,{useHash:false})]
   ],
-  providers: [],
+  providers: [
+    {provide: APP_BASE_HREF,useValue:'/'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
