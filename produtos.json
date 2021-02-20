@@ -21,6 +21,7 @@
             "nome": "Monitor Samsung",
             "valor": 250.00,
             "promocao": false,
+            
             "valorPromo": 0,
             "imagem": "monitor.jpg"
         },

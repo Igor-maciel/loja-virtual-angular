@@ -11,6 +11,10 @@ import { RouterModule } from '@angular/router';
 import { rooteRouterConfigu } from './app.route';
 import { APP_BASE_HREF } from '@angular/common';
 import{from }from "rxjs";
+import { ListaProdutosComponent } from './produto/lista-produtos/lista-produtos.component';
+import { ProdutoService } from './produto/produto.service';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,12 +24,16 @@ import{from }from "rxjs";
     MenuComponent,
     ContatoComponent,
     SobreComponent,
+    ListaProdutosComponent,
   ],
   imports: [
     BrowserModule,
-    [RouterModule.forRoot(rooteRouterConfigu,{useHash:false})]
+    [RouterModule.forRoot(rooteRouterConfigu,{useHash:false})],
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [
+    ProdutoService,
     {provide: APP_BASE_HREF,useValue:'/'}
   ],
   bootstrap: [AppComponent]
